@@ -9,7 +9,8 @@ public class Application {
         SpringApplication.run(Application.class);
 
         /*
-        testing all commits for trello beta 
+        testing all commits for trello beta
+        testing git status
 
          */
     }

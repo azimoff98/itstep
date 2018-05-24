@@ -168,11 +168,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MemberServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/az/itstep/azjava/testapp/service/impl/MemberServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file leaf-file-name="RowService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/az/itstep/azjava/testapp/service/RowService.java">
           <provider selected="true" editor-type-id="text-editor" />
@@ -197,7 +192,7 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="Application.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/az/itstep/azjava/testapp/Application.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
@@ -205,6 +200,15 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="asd.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/az/itstep/azjava/testapp/controller/asd.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -242,6 +246,13 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$" />
@@ -346,6 +357,18 @@
               <item name="itstep" type="462c0819:PsiDirectoryNode" />
               <item name="azjava" type="462c0819:PsiDirectoryNode" />
               <item name="testapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="trello_Beta" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trello_Beta" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="az" type="462c0819:PsiDirectoryNode" />
+              <item name="itstep" type="462c0819:PsiDirectoryNode" />
+              <item name="azjava" type="462c0819:PsiDirectoryNode" />
+              <item name="testapp" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="trello_Beta" type="b2602c69:ProjectViewProjectNode" />
@@ -633,12 +656,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527108169535</updated>
-      <workItem from="1527108174418" duration="2904000" />
+      <workItem from="1527108174418" duration="3513000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2904000" />
+    <option name="totallyTimeSpent" value="3513000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
@@ -665,7 +688,7 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Spring" />
       <window_info anchor="bottom" id="Terminal" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24980783" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24980783" />
       <window_info anchor="right" id="Bean Validation" />
       <window_info id="Web" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" />
@@ -755,6 +778,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/az/itstep/azjava/testapp/controller/asd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
         </state>
       </provider>
     </entry>

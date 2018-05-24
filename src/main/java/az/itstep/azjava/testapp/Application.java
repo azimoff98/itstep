@@ -15,8 +15,9 @@ public class Application {
          */
 
         /*
-        test for diff command 
+        test for diff command
 
+        test with sending to github
          */
     }
 }

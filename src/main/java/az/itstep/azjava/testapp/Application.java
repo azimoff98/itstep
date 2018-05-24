@@ -13,5 +13,10 @@ public class Application {
         testing git status
 
          */
+
+        /*
+        test for diff command 
+
+         */
     }
 }

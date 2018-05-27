@@ -31,7 +31,7 @@ public class AuthenticationService {
 
     private UserDetailsService userDetailsService;
 
-    private MemberDao memberRepository;
+    private MemberDao memberDao;
 
 
     public JwtAuthenticationResponse createAuthenticationToken(JwtAuthenticationRequest authenticationRequest) {
@@ -68,7 +68,7 @@ public class AuthenticationService {
     }
 
     public Member signUp(Member member) {
-        return memberRepository.save(member);
+        return memberDao.save(member);
     }
 
     /**

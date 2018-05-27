@@ -54,8 +54,8 @@
     </role>
     <schema id="14" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2018-05-24.00:47:27.446</IntrospectionTimestamp>
-      <IntrospectionStateNumber>776</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-05-28.00:59:37.079</IntrospectionTimestamp>
+      <IntrospectionStateNumber>841</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -75,97 +75,97 @@
       <ObjectId>12121</ObjectId>
     </schema>
     <sequence id="20" parent="14" name="tr_board_id_seq">
-      <ObjectId>41075</ObjectId>
-      <StateNumber>774</StateNumber>
+      <ObjectId>49387</ObjectId>
+      <StateNumber>839</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
     </sequence>
     <sequence id="21" parent="14" name="tr_member_id_seq">
-      <ObjectId>41062</ObjectId>
-      <StateNumber>773</StateNumber>
+      <ObjectId>49374</ObjectId>
+      <StateNumber>838</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
     </sequence>
     <sequence id="22" parent="14" name="tr_row_id_seq">
-      <ObjectId>41088</ObjectId>
-      <StateNumber>775</StateNumber>
+      <ObjectId>49400</ObjectId>
+      <StateNumber>840</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
     </sequence>
     <sequence id="23" parent="14" name="tr_task_id_seq">
-      <ObjectId>41101</ObjectId>
-      <StateNumber>776</StateNumber>
+      <ObjectId>49413</ObjectId>
+      <StateNumber>841</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
     </sequence>
     <sequence id="24" parent="14" name="tr_team_id_seq">
-      <ObjectId>41054</ObjectId>
-      <StateNumber>772</StateNumber>
+      <ObjectId>49366</ObjectId>
+      <StateNumber>837</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
     </sequence>
     <table id="25" parent="14" name="tr_board">
-      <ObjectId>41077</ObjectId>
-      <StateNumber>775</StateNumber>
+      <ObjectId>49389</ObjectId>
+      <StateNumber>840</StateNumber>
     </table>
     <table id="26" parent="14" name="tr_member">
-      <ObjectId>41064</ObjectId>
-      <StateNumber>773</StateNumber>
+      <ObjectId>49376</ObjectId>
+      <StateNumber>838</StateNumber>
     </table>
     <table id="27" parent="14" name="tr_row">
-      <ObjectId>41090</ObjectId>
-      <StateNumber>776</StateNumber>
+      <ObjectId>49402</ObjectId>
+      <StateNumber>841</StateNumber>
     </table>
     <table id="28" parent="14" name="tr_task">
-      <ObjectId>41103</ObjectId>
-      <StateNumber>776</StateNumber>
+      <ObjectId>49415</ObjectId>
+      <StateNumber>841</StateNumber>
     </table>
     <table id="29" parent="14" name="tr_team">
-      <ObjectId>41056</ObjectId>
-      <StateNumber>774</StateNumber>
+      <ObjectId>49368</ObjectId>
+      <StateNumber>839</StateNumber>
     </table>
     <column id="30" parent="25" name="id">
       <Position>1</Position>
-      <DataType>bigint|0s</DataType>
+      <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>774</StateNumber>
+      <StateNumber>839</StateNumber>
       <DefaultExpression>nextval(&apos;tr_board_id_seq&apos;::regclass)</DefaultExpression>
-      <TypeId>20</TypeId>
+      <TypeId>23</TypeId>
       <SequenceName>tr_board_id_seq</SequenceName>
     </column>
     <column id="31" parent="25" name="name">
       <Position>2</Position>
       <DataType>varchar(55)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>774</StateNumber>
+      <StateNumber>839</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="32" parent="25" name="team_id">
       <Position>3</Position>
-      <DataType>bigint|0s</DataType>
-      <StateNumber>774</StateNumber>
-      <TypeId>20</TypeId>
+      <DataType>integer|0s</DataType>
+      <StateNumber>839</StateNumber>
+      <TypeId>23</TypeId>
     </column>
     <index id="33" parent="25" name="tr_board_pkey">
-      <ObjectId>41081</ObjectId>
+      <ObjectId>49393</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="34" parent="25" name="tr_board_pkey">
-      <ObjectId>41082</ObjectId>
+      <ObjectId>49394</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>tr_board_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
     <foreign-key id="35" parent="25" name="tr_board_team_id_fkey">
-      <ObjectId>41083</ObjectId>
+      <ObjectId>49395</ObjectId>
       <ColNames>team_id</ColNames>
-      <RefTableId>41056</RefTableId>
+      <RefTableId>49368</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>tr_team</RefTableName>
       <RefKeyName>tr_team_pkey</RefKeyName>
@@ -173,66 +173,66 @@
     </foreign-key>
     <column id="36" parent="26" name="id">
       <Position>1</Position>
-      <DataType>bigint|0s</DataType>
+      <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>773</StateNumber>
+      <StateNumber>838</StateNumber>
       <DefaultExpression>nextval(&apos;tr_member_id_seq&apos;::regclass)</DefaultExpression>
-      <TypeId>20</TypeId>
+      <TypeId>23</TypeId>
       <SequenceName>tr_member_id_seq</SequenceName>
     </column>
     <column id="37" parent="26" name="username">
       <Position>2</Position>
       <DataType>varchar(30)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>773</StateNumber>
+      <StateNumber>838</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="38" parent="26" name="password">
       <Position>3</Position>
       <DataType>varchar(30)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>773</StateNumber>
+      <StateNumber>838</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="39" parent="26" name="firstname">
+    <column id="39" parent="26" name="name">
       <Position>4</Position>
-      <DataType>varchar(55)|0s</DataType>
-      <StateNumber>773</StateNumber>
+      <DataType>varchar(30)|0s</DataType>
+      <StateNumber>838</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="40" parent="26" name="lastname">
+    <column id="40" parent="26" name="surname">
       <Position>5</Position>
       <DataType>varchar(55)|0s</DataType>
-      <StateNumber>773</StateNumber>
+      <StateNumber>838</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="41" parent="26" name="email">
       <Position>6</Position>
       <DataType>varchar(99)|0s</DataType>
-      <StateNumber>773</StateNumber>
+      <StateNumber>838</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="42" parent="26" name="team_id">
       <Position>7</Position>
-      <DataType>bigint|0s</DataType>
-      <StateNumber>773</StateNumber>
-      <TypeId>20</TypeId>
+      <DataType>integer|0s</DataType>
+      <StateNumber>838</StateNumber>
+      <TypeId>23</TypeId>
     </column>
     <index id="43" parent="26" name="tr_member_pkey">
-      <ObjectId>41068</ObjectId>
+      <ObjectId>49380</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="44" parent="26" name="tr_member_pkey">
-      <ObjectId>41069</ObjectId>
+      <ObjectId>49381</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>tr_member_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
     <foreign-key id="45" parent="26" name="tr_member_team_id_fkey">
-      <ObjectId>41070</ObjectId>
+      <ObjectId>49382</ObjectId>
       <ColNames>team_id</ColNames>
-      <RefTableId>41056</RefTableId>
+      <RefTableId>49368</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>tr_team</RefTableName>
       <RefKeyName>tr_team_pkey</RefKeyName>
@@ -240,41 +240,41 @@
     </foreign-key>
     <column id="46" parent="27" name="id">
       <Position>1</Position>
-      <DataType>bigint|0s</DataType>
+      <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>775</StateNumber>
+      <StateNumber>840</StateNumber>
       <DefaultExpression>nextval(&apos;tr_row_id_seq&apos;::regclass)</DefaultExpression>
-      <TypeId>20</TypeId>
+      <TypeId>23</TypeId>
       <SequenceName>tr_row_id_seq</SequenceName>
     </column>
     <column id="47" parent="27" name="name">
       <Position>2</Position>
       <DataType>varchar(55)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>775</StateNumber>
+      <StateNumber>840</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="48" parent="27" name="board_id">
       <Position>3</Position>
-      <DataType>bigint|0s</DataType>
-      <StateNumber>775</StateNumber>
-      <TypeId>20</TypeId>
+      <DataType>integer|0s</DataType>
+      <StateNumber>840</StateNumber>
+      <TypeId>23</TypeId>
     </column>
     <index id="49" parent="27" name="tr_row_pkey">
-      <ObjectId>41094</ObjectId>
+      <ObjectId>49406</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="50" parent="27" name="tr_row_pkey">
-      <ObjectId>41095</ObjectId>
+      <ObjectId>49407</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>tr_row_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
     <foreign-key id="51" parent="27" name="tr_row_board_id_fkey">
-      <ObjectId>41096</ObjectId>
+      <ObjectId>49408</ObjectId>
       <ColNames>board_id</ColNames>
-      <RefTableId>41077</RefTableId>
+      <RefTableId>49389</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>tr_board</RefTableName>
       <RefKeyName>tr_board_pkey</RefKeyName>
@@ -282,41 +282,41 @@
     </foreign-key>
     <column id="52" parent="28" name="id">
       <Position>1</Position>
-      <DataType>bigint|0s</DataType>
+      <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>776</StateNumber>
+      <StateNumber>841</StateNumber>
       <DefaultExpression>nextval(&apos;tr_task_id_seq&apos;::regclass)</DefaultExpression>
-      <TypeId>20</TypeId>
+      <TypeId>23</TypeId>
       <SequenceName>tr_task_id_seq</SequenceName>
     </column>
-    <column id="53" parent="28" name="task_text">
+    <column id="53" parent="28" name="text">
       <Position>2</Position>
       <DataType>varchar(55)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>776</StateNumber>
+      <StateNumber>841</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="54" parent="28" name="row_id">
       <Position>3</Position>
-      <DataType>bigint|0s</DataType>
-      <StateNumber>776</StateNumber>
-      <TypeId>20</TypeId>
+      <DataType>integer|0s</DataType>
+      <StateNumber>841</StateNumber>
+      <TypeId>23</TypeId>
     </column>
     <index id="55" parent="28" name="tr_task_pkey">
-      <ObjectId>41107</ObjectId>
+      <ObjectId>49419</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="56" parent="28" name="tr_task_pkey">
-      <ObjectId>41108</ObjectId>
+      <ObjectId>49420</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>tr_task_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
     <foreign-key id="57" parent="28" name="tr_task_row_id_fkey">
-      <ObjectId>41109</ObjectId>
+      <ObjectId>49421</ObjectId>
       <ColNames>row_id</ColNames>
-      <RefTableId>41090</RefTableId>
+      <RefTableId>49402</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>tr_row</RefTableName>
       <RefKeyName>tr_row_pkey</RefKeyName>
@@ -324,27 +324,27 @@
     </foreign-key>
     <column id="58" parent="29" name="id">
       <Position>1</Position>
-      <DataType>bigint|0s</DataType>
+      <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>772</StateNumber>
+      <StateNumber>837</StateNumber>
       <DefaultExpression>nextval(&apos;tr_team_id_seq&apos;::regclass)</DefaultExpression>
-      <TypeId>20</TypeId>
+      <TypeId>23</TypeId>
       <SequenceName>tr_team_id_seq</SequenceName>
     </column>
     <column id="59" parent="29" name="name">
       <Position>2</Position>
       <DataType>varchar(55)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>772</StateNumber>
+      <StateNumber>837</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <index id="60" parent="29" name="tr_team_pkey">
-      <ObjectId>41060</ObjectId>
+      <ObjectId>49372</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="61" parent="29" name="tr_team_pkey">
-      <ObjectId>41061</ObjectId>
+      <ObjectId>49373</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>tr_team_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
